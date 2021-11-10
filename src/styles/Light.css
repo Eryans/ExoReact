@@ -1,0 +1,11 @@
+.light-on{
+    background-color: lightyellow;
+}
+.light-off{
+    background-color: gray;
+}
+.light-off,.light-on{
+    height: 100px;
+    width: 100px;
+    border:1px solid black
+}
