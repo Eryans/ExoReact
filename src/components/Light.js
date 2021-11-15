@@ -10,8 +10,7 @@ export default class Light extends React.Component {
         };
         this.toggleLightEvent = this.toggleLightEvent.bind(this);
     }
-    toggleLightEvent(e){
-        e.preventDefault();
+    toggleLightEvent(){
         console.log("click");
         this.setState( state => ({
             toggleLight : !state.toggleLight
@@ -19,10 +18,10 @@ export default class Light extends React.Component {
     }
     render() {
         return (
-            <React.Fragment>
+            <div>
             <button onClick={this.toggleLightEvent}>Light</button>
             <div className={this.state.toggleLight ? "light-on" : "light-off"}/>
-            </React.Fragment>
+            </div>
         )
     }
 }

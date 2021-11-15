@@ -18,6 +18,9 @@ export default class ToDoList extends React.Component {
     }
     handleClick(e){
         e.preventDefault();
+        this.setState({
+            input : e.target.value
+        })
         this.toDoArr.push(this.state.input);
         console.log(this.toDoArr);
     }
